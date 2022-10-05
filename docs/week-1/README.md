@@ -10,9 +10,9 @@
 
 ![data model](./data%20model.png)
 
-* user: user auth, user role, user balance
-* task: task description, task status, task price
-* accounting: auditlog
+* user: user auth, user role, user balance;
+* task: task description, task status, task price;
+* accounting: auditlog.
 
 # Домены
 ![domains](./domains.jpg)
@@ -21,28 +21,24 @@
 
 # Сервисы
 
-По итогу выделяем 5 сервисов:
+По итогу выделяем 4 сервиса:
 * authenticate - общий сервис авторизации UberPopug Inc;
 * task tracker - управление задачами(создание, ассайн, закрытие);
 * accounting - произведение расчётов, управление балансами пользователей, ведение аудит лога;
-* analytics - формирование аналитическойинформации, полученной из accounting;
-* mail - отправка сформированных отчётов;
+* analytics - формирование аналитическойинформации, полученной из accounting.
 
 # Бизнес-события
-* user role changed
-* task added
-* task assigned
-* all tasks assigned
-* task completed
-* task status changed
-* task price calculated
-* money deposited
-* money credited
-* money withdrawn
+* user role changed;
+* task added;
+* task assigned;
+* all tasks assigned;
+* task completed;
+* task status changed;
+* task price calculated;
+* money deposited;
+* money credited;
+* money withdrawn.
 
 # CUD-события
-* create, update, delete users
-* daily balance reset
-* daily salary calculated
-* audit log written
-* report sent
+* create, update, delete users;
+* task added (для аккаунтинга нужно посчитать стоимость таски).
